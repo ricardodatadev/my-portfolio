@@ -24,17 +24,19 @@ export default function About() {
 
           {/* Foto centralizada no topo */}
           <div className="flex justify-center mb-12">
-            <div className="relative w-56 h-56 md:w-72 md:h-72 overflow-hidden rounded-full">
+            <div className="relative w-56 h-56 md:w-72 md:h-72">
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-700 to-teal-700 rounded-full animate-pulse blur-xl opacity-50"></div>
-              <div className="absolute inset-1 bg-black rounded-full overflow-hidden relative">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-emerald-700/50">
                 <Image
                   src="/minha-foto.jpeg"
                   alt="Ricardo Pereira"
-                  className="object-cover"
-                  fill
+                  width={288}
+                  height={288}
+                  className="object-cover w-full h-full rounded-full"
+                  priority
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-700/30 to-teal-700/30 rounded-full mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-700/30 to-teal-700/30 rounded-full mix-blend-overlay pointer-events-none"></div>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default function Contact() {
   const contactItems = [
     {
-      title: 'Email',
-      href: 'mailto:ricardodatadev@gmail.com',
+      title: "Email",
+      href: "mailto:ricardodatadev@gmail.com",
       icon: (
         <svg
           className="h-6 w-6 text-emerald-500"
@@ -20,11 +20,11 @@ export default function Contact() {
           <polyline points="22,6 12,13 2,6" />
         </svg>
       ),
-      description: 'ricardodatadev@gmail.com',
+      description: "ricardodatadev@gmail.com",
     },
     {
-      title: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/ricardo-pereira-3b327a298/',
+      title: "LinkedIn",
+      href: "https://www.linkedin.com/in/ricardo-pereira-3b327a298/",
       icon: (
         <svg
           className="h-6 w-6 text-emerald-500"
@@ -41,11 +41,11 @@ export default function Contact() {
           <circle cx="4" cy="4" r="2" />
         </svg>
       ),
-      description: '@ricardodatadev',
+      description: "@ricardodatadev",
     },
     {
-      title: 'GitHub',
-      href: 'https://github.com/ricardodatadev',
+      title: "GitHub",
+      href: "https://github.com/ricardodatadev",
       icon: (
         <svg
           className="h-6 w-6 text-emerald-500"
@@ -60,7 +60,7 @@ export default function Contact() {
           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
         </svg>
       ),
-      description: '@ricardodatadev',
+      description: "@ricardodatadev",
     },
   ];
 
@@ -118,4 +118,3 @@ export default function Contact() {
     </section>
   );
 }
-

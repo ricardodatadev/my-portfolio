@@ -58,7 +58,9 @@ export default function Skills() {
                     className="flex items-center text-gray-400 group-hover:text-gray-300 transition-colors font-mono"
                   >
                     <span className="w-2.5 h-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full mr-3 flex-shrink-0"></span>
-                    <span className="font-medium text-lg whitespace-nowrap">{habilidade}</span>
+                    <span className="font-medium text-lg whitespace-nowrap">
+                      {habilidade}
+                    </span>
                   </div>
                 ))}
               </div>
