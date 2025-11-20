@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section
@@ -24,11 +26,12 @@ export default function About() {
           <div className="flex justify-center mb-12">
             <div className="relative w-56 h-56 md:w-72 md:h-72 overflow-hidden rounded-full">
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-700 to-teal-700 rounded-full animate-pulse blur-xl opacity-50"></div>
-              <div className="absolute inset-1 bg-black rounded-full overflow-hidden">
-                <img
+              <div className="absolute inset-1 bg-black rounded-full overflow-hidden relative">
+                <Image
                   src="/minha-foto.jpeg"
                   alt="Ricardo Pereira"
-                  className="object-cover w-full h-full"
+                  className="object-cover"
+                  fill
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-700/30 to-teal-700/30 rounded-full mix-blend-overlay"></div>
@@ -42,15 +45,12 @@ export default function About() {
             Olá! 👋 Sou{" "}
             <span className="font-semibold text-emerald-500">
               Ricardo Pereira
-            </span>
-            , desenvolvedor full stack com mais de 3 anos de experiência, sempre
-            em busca de evoluir e aprender coisas novas.
+            </span>,
+            desenvolvedor full stack com experiência prática em projetos web e em atividades analíticas. 
           </p>
 
           <p className="text-gray-400 md:text-lg lg:text-xl leading-relaxed font-mono">
-            Atuo no mercado de planejamento e controle de manutenção, onde tive
-            a oportunidade de aplicar análise de dados, desenvolver projetos web
-            e criar sistemas de gestão eficientes e funcionais.
+            Atuo em desenvolvimento de front e back-end, integração com bancos de dados e vivência em processos, indicadores e KPIs, contribuindo para a organização de dados, eficiência operacional e apoio à tomada de decisão.
           </p>
 
           <p className="text-gray-400 md:text-lg lg:text-xl leading-relaxed font-mono">
