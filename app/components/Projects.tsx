@@ -6,7 +6,7 @@ export default function Projects() {
         "Um portfolio moderno e responsivo desenvolvido com Next.js, React, TypeScript e Tailwind CSS.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
 
-      link: "https://github.com",
+      link: "https://github.com/ricardodatadev/my-portfolio.git",
     },
 
     {
