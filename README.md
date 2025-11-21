@@ -1,24 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Ricardo Pereira
 
-## Getting Started
+Um portfolio moderno e responsivo desenvolvido com Next.js, React, TypeScript e Tailwind CSS.
 
-First, run the development server:
+## 🚀 Características
+
+- **Preloader**: Animação de carregamento com barra de progresso
+- **Header Fixo**: Navegação suave entre seções
+- **Hero Section**: Apresentação personalizada com links sociais
+- **Sobre**: Informações sobre o desenvolvedor
+- **Habilidades**: Barras de progresso e tecnologias
+- **Projetos**: Grid de projetos
+- **Contato**: Formulário funcional
+- **Footer**: Links sociais e informações
+
+## 🛠️ Tecnologias
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Props e State (React básico)
+
+## 📦 Como executar
 
 ```bash
+# Instalar dependências
+npm install
+
+# Executar em desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build para produção
+npm run build
+
+# Iniciar servidor de produção
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
 ## Learn More
 
