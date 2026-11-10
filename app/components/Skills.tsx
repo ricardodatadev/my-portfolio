@@ -2,12 +2,22 @@ import React from "react";
 
 const habilidadesData = [
   {
-    categoria: "Backend",
-    habilidades: ["PHP", "Python", "Node.js", "Next.js"],
+    categoria: "Frontend",
+    habilidades: [
+      "TypeScript / JavaScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+    ],
   },
   {
-    categoria: "Frontend",
-    habilidades: ["HTML5 / CSS3", "JavaScript/React/Next.js", "Tailwind CSS"],
+    categoria: "Backend",
+    habilidades: ["PHP / Laravel", "Python / FastAPI", "Node.js", "APIs REST"],
+  },
+  {
+    categoria: "Inteligência Artificial",
+    habilidades: ["LangChain", "LangGraph", "RAG", "Qdrant", "YOLO / OpenCV"],
   },
   {
     categoria: "Banco de Dados",
@@ -15,7 +25,7 @@ const habilidadesData = [
   },
   {
     categoria: "DevOps",
-    habilidades: ["Docker", "Git", "CI/CD"],
+    habilidades: ["Docker / Docker Compose", "Git", "CI/CD"],
   },
 ];
 

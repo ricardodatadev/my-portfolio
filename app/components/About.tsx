@@ -48,22 +48,33 @@ export default function About() {
             <span className="font-semibold text-emerald-500">
               Ricardo Pereira
             </span>,
-            desenvolvedor full stack com experiência prática em projetos web e em atividades analíticas. 
+            desenvolvedor Full Stack graduado em Análise e Desenvolvimento de Sistemas, com pós-graduações em andamento em Engenharia de Software e Cloud Computing. 
           </p>
 
           <p className="text-gray-400 md:text-lg lg:text-xl leading-relaxed font-mono">
-            Atuo em desenvolvimento de front e back-end, integração com bancos de dados e vivência em processos, indicadores e KPIs, contribuindo para a organização de dados, eficiência operacional e apoio à tomada de decisão.
+            Possuo experiência no desenvolvimento e manutenção de aplicações web e sistemas ERP, atuando com PHP (Laravel), Node.js, JavaScript, React e modelagem de bancos de dados SQL. Em projetos autorais de inovação, aplico Python na construção de soluções com Inteligência Artificial — incluindo arquiteturas de agentes autônomos, RAG, LangGraph — e análise de dados. Busco criar softwares eficientes, combinando engenharia de backend tradicional a recursos modernos de automação e dados.
           </p>
 
           <p className="text-gray-400 md:text-lg lg:text-xl leading-relaxed font-mono">
             Minha principal especialidade é o desenvolvimento com{" "}
-            <span className="font-semibold text-emerald-500">JavaScript</span>,{" "}
             <span className="font-semibold text-emerald-500">
-              React / Next.js
+              TypeScript, React e Next.js
+            </span>{" "}
+            no front-end, e{" "}
+            <span className="font-semibold text-emerald-500">
+              PHP com Laravel
+            </span>{" "}
+            e{" "}
+            <span className="font-semibold text-emerald-500">
+              Python com FastAPI
+            </span>{" "}
+            no back-end, com aplicações containerizadas em{" "}
+            <span className="font-semibold text-emerald-500">Docker</span>.
+            Também desenvolvo soluções de{" "}
+            <span className="font-semibold text-emerald-500">
+              IA com LangChain e LangGraph
             </span>
-            , <span className="font-semibold text-emerald-500">Python</span> e{" "}
-            <span className="font-semibold text-emerald-500">PHP</span> —
-            incluindo boas práticas e código limpo.
+            , sempre priorizando boas práticas e código limpo.
           </p>
         </div>
       </div>
