@@ -17,6 +17,14 @@ export default function Projects() {
       link: "https://github.com/ricardodatadev/fleet-management-erp-showcase.git",
     },
     {
+      title: "Plataforma de Gestão para Escolas de Música",
+      description:
+        "Desenvolvimento de uma plataforma SaaS multi-tenant para gestão de escolas de música, com controle de alunos, matrículas, professores, financeiro e agenda sem conflitos de horário. Isolamento de dados entre escolas com Row-Level Security no PostgreSQL.",
+      technologies: ["TypeScript", "Node.js", "React", "PostgreSQL"],
+
+      link: "https://github.com/ricardodatadev/music-manager-erp-showcase.git",
+    },
+    {
       title: "Sistema de Detecção de Objetos",
       description:
         "Projeto utilizando Python e as bibliotecas YOLO e OpenCV com o objetivo de detectar objetos em vídeos. YOLO (You Only Look Once) é um modelo de rede neural convolucional extremamente eficiente para detecção de objetos em tempo real.",
@@ -100,7 +108,11 @@ export default function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="group p-6 rounded-2xl bg-gradient-to-br from-gray-900/90 to-black/80 border border-gray-800/50 hover:border-emerald-700/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-900/20 flex flex-col h-full"
+                className={`group p-6 rounded-2xl bg-gradient-to-br from-gray-900/90 to-black/80 border border-gray-800/50 hover:border-emerald-700/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-900/20 flex flex-col h-full ${
+                  projects.length % 2 === 1 && index === projects.length - 1
+                    ? "md:col-span-2"
+                    : ""
+                }`}
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-emerald-400 transition-colors font-mono">
                   {project.title}
