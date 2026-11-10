@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Preloader from "./components/Preloader";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -11,9 +11,9 @@ import Footer from "./components/Footer";
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
 
-  const handleLoadComplete = () => {
+  const handleLoadComplete = useCallback(() => {
     setShowContent(true);
-  };
+  }, []);
 
   return (
     <>

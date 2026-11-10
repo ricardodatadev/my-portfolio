@@ -1,23 +1,15 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Portfólio",
-      description:
-        "Um portfolio moderno e responsivo desenvolvido com Next.js, React, TypeScript e Tailwind CSS.",
-      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-
-      link: "https://github.com/ricardodatadev/my-portfolio.git",
-    },
-    {
       title: "Agente de IA para Saúde Pública",
       description:
-        "Desenvolvimento de um agente de IA para atendimento público de saúde (SUS municipal) integrado via Docker Compose, utilizando arquitetura RAG com Qdrant para consulta e citação de fontes (unidades, horários, vacinas, exames e diretrizes do Ministério da Saúde.",
+        "Desenvolvimento de um agente de IA para atendimento público de saúde (SUS municipal) integrado via Docker Compose, utilizando arquitetura RAG com Qdrant para consulta e citação de fontes (unidades, horários, vacinas, exames e diretrizes do Ministério da Saúde).",
       technologies: ["Python", "React", "LangChain", "LangGraph", "FastAPI"],
 
-      link: "https://github.com/ricardodatadev/my-portfolio.git",
+      link: "https://github.com/ricardodatadev/health-ai-agent.git",
     },
     {
-      title: "Sistema de Gestão de Frotas ",
+      title: "Sistema de Gestão de Frotas",
       description:
         "Desenvolvimento de um ERP para gestão de frotas e manutenção, estruturando o backend em Laravel (PHP 8.3+) e o frontend em React, integrados via Docker e Docker Compose.",
       technologies: ["PHP", "React", "Laravel", "Docker"],
@@ -72,7 +64,14 @@ export default function Projects() {
     "D3.js": "bg-orange-900/40 text-orange-300 border border-orange-800/50",
     Python: "bg-yellow-900/40 text-yellow-400 border border-yellow-800/50",
     FastAPI: "bg-green-900/40 text-green-400 border border-green-800/50",
+    LangChain: "bg-emerald-900/40 text-emerald-300 border border-emerald-800/50",
+    LangGraph: "bg-cyan-900/40 text-cyan-300 border border-cyan-800/50",
+    Laravel: "bg-red-900/40 text-red-400 border border-red-800/50",
+    Docker: "bg-sky-900/40 text-sky-400 border border-sky-800/50",
   };
+
+  const defaultTechColor =
+    "bg-gray-800/40 text-gray-300 border border-gray-700/50";
 
   return (
     <section
@@ -96,8 +95,8 @@ export default function Projects() {
         </div>
 
         {/* Grid uniforme - todos os projetos com mesmo tamanho */}
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -113,7 +112,7 @@ export default function Projects() {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className={`px-2.5 py-1 rounded-full text-xs font-bold ${techColors[tech]} font-mono`}
+                      className={`px-2.5 py-1 rounded-full text-xs font-bold ${techColors[tech] ?? defaultTechColor} font-mono`}
                     >
                       {tech}
                     </span>
