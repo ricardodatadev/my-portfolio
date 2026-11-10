@@ -1,19 +1,19 @@
 export default function Projects() {
+  // Ordem pensada em pares por linha na grade de 2 colunas:
+  // [IA + ERP] → [SaaS + Web MVC] → [Visão computacional + Dados]
   const projects = [
     {
       title: "Agente de IA para Saúde Pública",
       description:
         "Desenvolvimento de um agente de IA para atendimento público de saúde (SUS municipal) integrado via Docker Compose, utilizando arquitetura RAG com Qdrant para consulta e citação de fontes (unidades, horários, vacinas, exames e diretrizes do Ministério da Saúde).",
-      technologies: ["Python", "React", "LangChain", "LangGraph", "FastAPI"],
-
+      technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "React"],
       link: "https://github.com/ricardodatadev/health-ai-agent.git",
     },
     {
       title: "Sistema de Gestão de Frotas",
       description:
         "Desenvolvimento de um ERP para gestão de frotas e manutenção, estruturando o backend em Laravel (PHP 8.3+) e o frontend em React, integrados via Docker e Docker Compose.",
-      technologies: ["PHP", "React", "Laravel", "Docker"],
-
+      technologies: ["PHP", "Laravel", "React", "Docker"],
       link: "https://github.com/ricardodatadev/fleet-management-erp-showcase.git",
     },
     {
@@ -21,65 +21,84 @@ export default function Projects() {
       description:
         "Desenvolvimento de uma plataforma SaaS multi-tenant para gestão de escolas de música, com controle de alunos, matrículas, professores, financeiro e agenda sem conflitos de horário. Isolamento de dados entre escolas com Row-Level Security no PostgreSQL.",
       technologies: ["TypeScript", "Node.js", "React", "PostgreSQL"],
-
       link: "https://github.com/ricardodatadev/music-manager-erp-showcase.git",
+    },
+    {
+      title: "Sales Web MVC",
+      description:
+        "Desenvolvimento de uma aplicação web para gerenciamento de departamentos e vendedores, seguindo o padrão MVC com ASP.NET Core, persistência de dados com Entity Framework Core e MySQL.",
+      technologies: ["C#", "ASP.NET Core", "Entity Framework", "MySQL", "Docker"],
+      link: "https://github.com/ricardodatadev/sales-web-mvc.git",
     },
     {
       title: "Sistema de Detecção de Objetos",
       description:
-        "Projeto utilizando Python e as bibliotecas YOLO e OpenCV com o objetivo de detectar objetos em vídeos. YOLO (You Only Look Once) é um modelo de rede neural convolucional extremamente eficiente para detecção de objetos em tempo real.",
+        "Desenvolvimento de um sistema de detecção de objetos em vídeos com Python, utilizando YOLO (You Only Look Once), modelo de rede neural convolucional voltado à detecção em tempo real, e OpenCV para o processamento das imagens.",
       technologies: ["Python", "YOLO", "OpenCV"],
-
       link: "https://github.com/ricardodatadev/detector-objetos.git",
     },
     {
       title: "Dashboard Financeiro",
       description:
-        "Dashboard utilizando Python, Streamlit e Plotly, com uma interface simples e interativa que facilita o acompanhamento dos principais indicadores financeiros.",
+        "Desenvolvimento de um dashboard interativo com Python, Streamlit e Plotly, com uma interface simples que facilita o acompanhamento dos principais indicadores financeiros.",
       technologies: ["Python", "Streamlit", "Plotly"],
-
       link: "https://github.com/ricardodatadev/Dashboard-Python.git",
     },
   ];
 
-  const techColors: Record<string, string> = {
-    React: "bg-blue-900/40 text-blue-400 border border-blue-800/50",
-    Html: "bg-red-900/40 text-red-400 border border-red-800/50",
-    CSS: "bg-gray-800/40 text-gray-300 border border-gray-700/50",
-    Javascript: "bg-blue-900/40 text-blue-400 border border-blue-800/50",
-    PHP: "bg-blue-900/40 text-blue-200 border border-blue-800/50",
-    YOLO: "bg-blue-900/40 text-blue-400 border border-blue-800/50",
-    OpenCV: "bg-blue-900/40 text-blue-300 border border-blue-800/50",
-    "Power BI": "bg-yellow-900/40 text-yellow-400 border border-yellow-800/50",
-    Selenium: "bg-gray-800/40 text-gray-300 border border-gray-700/50",
-    PyAutoGUI: "bg-yellow-900/40 text-yellow-300 border border-yellow-800/50",
-    Plotly: "bg-orange-900/40 text-orange-400 border border-orange-800/50",
-    Streamlit: "bg-pink-900/40 text-pink-400 border border-pink-800/50",
-    "Next.js": "bg-gray-900 text-gray-100 border border-gray-700",
-    "Node.js": "bg-green-900/40 text-green-400 border border-green-800/50",
-    MongoDB: "bg-green-900/40 text-green-300 border border-green-800/50",
-    Stripe: "bg-purple-900/40 text-purple-400 border border-purple-800/50",
-    TypeScript: "bg-blue-900/40 text-blue-300 border border-blue-800/50",
-    PostgreSQL: "bg-indigo-900/40 text-indigo-400 border border-indigo-800/50",
-    "Chart.js": "bg-orange-900/40 text-orange-400 border border-orange-800/50",
-    "React Native": "bg-teal-900/40 text-teal-400 border border-teal-800/50",
-    Firebase: "bg-yellow-900/40 text-yellow-400 border border-yellow-800/50",
-    "Maps API": "bg-cyan-900/40 text-cyan-400 border border-cyan-800/50",
-    "Tailwind CSS": "bg-teal-900/40 text-teal-300 border border-teal-800/50",
-    Prisma: "bg-purple-900/40 text-purple-300 border border-purple-800/50",
-    Express: "bg-gray-800/40 text-gray-300 border border-gray-700/50",
-    JWT: "bg-red-900/40 text-red-400 border border-red-800/50",
-    "D3.js": "bg-orange-900/40 text-orange-300 border border-orange-800/50",
-    Python: "bg-yellow-900/40 text-yellow-400 border border-yellow-800/50",
-    FastAPI: "bg-green-900/40 text-green-400 border border-green-800/50",
-    LangChain: "bg-emerald-900/40 text-emerald-300 border border-emerald-800/50",
-    LangGraph: "bg-cyan-900/40 text-cyan-300 border border-cyan-800/50",
-    Laravel: "bg-red-900/40 text-red-400 border border-red-800/50",
-    Docker: "bg-sky-900/40 text-sky-400 border border-sky-800/50",
+  // Cores padronizadas por categoria: cada cor tem um significado.
+  const categoryColors = {
+    linguagem: "bg-amber-900/30 text-amber-300 border border-amber-800/50",
+    backend: "bg-emerald-900/30 text-emerald-300 border border-emerald-800/50",
+    frontend: "bg-sky-900/30 text-sky-300 border border-sky-800/50",
+    dadosIA: "bg-violet-900/30 text-violet-300 border border-violet-800/50",
+    banco: "bg-orange-900/30 text-orange-300 border border-orange-800/50",
+    devops: "bg-rose-900/30 text-rose-300 border border-rose-800/50",
+  } as const;
+
+  const techCategory: Record<string, keyof typeof categoryColors> = {
+    // Linguagens
+    Python: "linguagem",
+    PHP: "linguagem",
+    TypeScript: "linguagem",
+    JavaScript: "linguagem",
+    "C#": "linguagem",
+    // Back-end
+    FastAPI: "backend",
+    Laravel: "backend",
+    "Node.js": "backend",
+    Express: "backend",
+    "ASP.NET Core": "backend",
+    // Front-end
+    React: "frontend",
+    "Next.js": "frontend",
+    "Tailwind CSS": "frontend",
+    Bootstrap: "frontend",
+    // Dados & IA
+    LangChain: "dadosIA",
+    LangGraph: "dadosIA",
+    YOLO: "dadosIA",
+    OpenCV: "dadosIA",
+    Pandas: "dadosIA",
+    Plotly: "dadosIA",
+    Streamlit: "dadosIA",
+    // Banco de dados & ORM
+    PostgreSQL: "banco",
+    MySQL: "banco",
+    Qdrant: "banco",
+    "Entity Framework": "banco",
+    // DevOps
+    Docker: "devops",
+    Git: "devops",
   };
 
   const defaultTechColor =
     "bg-gray-800/40 text-gray-300 border border-gray-700/50";
+
+  const getTechColor = (tech: string) => {
+    const category = techCategory[tech];
+    return category ? categoryColors[category] : defaultTechColor;
+  };
 
   return (
     <section
@@ -102,12 +121,12 @@ export default function Projects() {
           </h2>
         </div>
 
-        {/* Grid uniforme - todos os projetos com mesmo tamanho */}
+        {/* Grid uniforme - se o total for ímpar, o último card ocupa a linha inteira */}
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <div
-                key={index}
+                key={project.title}
                 className={`group p-6 rounded-2xl bg-gradient-to-br from-gray-900/90 to-black/80 border border-gray-800/50 hover:border-emerald-700/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-900/20 flex flex-col h-full ${
                   projects.length % 2 === 1 && index === projects.length - 1
                     ? "md:col-span-2"
@@ -124,7 +143,7 @@ export default function Projects() {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className={`px-2.5 py-1 rounded-full text-xs font-bold ${techColors[tech] ?? defaultTechColor} font-mono`}
+                      className={`px-2.5 py-1 rounded-full text-xs font-bold ${getTechColor(tech)} font-mono`}
                     >
                       {tech}
                     </span>
