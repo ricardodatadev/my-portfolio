@@ -52,29 +52,41 @@ export default function About() {
           </p>
 
           <p className="text-gray-400 md:text-lg lg:text-xl leading-relaxed font-mono">
-            Possuo experiência no desenvolvimento e manutenção de aplicações web e sistemas ERP, atuando com PHP (Laravel), Node.js, JavaScript, React e modelagem de bancos de dados SQL. Em projetos autorais de inovação, aplico Python na construção de soluções com Inteligência Artificial — incluindo arquiteturas de agentes autônomos, RAG, LangGraph — e análise de dados. Busco criar softwares eficientes, combinando engenharia de backend tradicional a recursos modernos de automação e dados.
+            Atuo no desenvolvimento e na manutenção de aplicações web e
+            sistemas ERP, participando das etapas de modelagem de dados,
+            back-end e front-end.
           </p>
 
           <p className="text-gray-400 md:text-lg lg:text-xl leading-relaxed font-mono">
-            Minha principal especialidade é o desenvolvimento com{" "}
+            No back-end, trabalho com{" "}
+            <span className="font-semibold text-emerald-500">Python</span>{" "}
+            (FastAPI),{" "}
+            <span className="font-semibold text-emerald-500">PHP</span>{" "}
+            (Laravel) e{" "}
+            <span className="font-semibold text-emerald-500">Node.js</span>; no
+            front-end, com{" "}
             <span className="font-semibold text-emerald-500">
-              TypeScript, React e Next.js
-            </span>{" "}
-            no front-end, e{" "}
-            <span className="font-semibold text-emerald-500">
-              PHP com Laravel
-            </span>{" "}
-            e{" "}
-            <span className="font-semibold text-emerald-500">
-              Python com FastAPI
-            </span>{" "}
-            no back-end, com aplicações containerizadas em{" "}
-            <span className="font-semibold text-emerald-500">Docker</span>.
-            Também desenvolvo soluções de{" "}
-            <span className="font-semibold text-emerald-500">
-              IA com LangChain e LangGraph
+              JavaScript/TypeScript
             </span>
-            , sempre priorizando boas práticas e código limpo.
+            ,{" "}
+            <span className="font-semibold text-emerald-500">
+              React e Next.js
+            </span>
+            . Utilizo Docker na configuração e padronização dos ambientes.
+          </p>
+
+          <p className="text-gray-400 md:text-lg lg:text-xl leading-relaxed font-mono">
+            Com Python, também desenvolvo{" "}
+            <span className="font-semibold text-emerald-500">
+              análises de dados
+            </span>{" "}
+            e dashboards (Pandas, Plotly e Streamlit) e soluções de{" "}
+            <span className="font-semibold text-emerald-500">
+              Inteligência Artificial
+            </span>{" "}
+            com LangChain e LangGraph, incluindo agentes e arquiteturas RAG.
+            Em todos os projetos, sigo sempre priorizando boas práticas e
+            código limpo.
           </p>
         </div>
       </div>

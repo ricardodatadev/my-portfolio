@@ -13,7 +13,7 @@ const habilidadesData = [
   },
   {
     categoria: "Backend",
-    habilidades: ["PHP / Laravel", "Python / FastAPI", "Node.js", "APIs REST"],
+    habilidades: ["Python / FastAPI", "PHP / Laravel", "Node.js", "APIs REST"],
   },
   {
     categoria: "Inteligência Artificial",
