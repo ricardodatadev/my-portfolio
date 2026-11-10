@@ -8,14 +8,21 @@ export default function Projects() {
 
       link: "https://github.com/ricardodatadev/my-portfolio.git",
     },
-
     {
-      title: "Sistema de Cadastro de Frotas",
+      title: "Agente de IA para Saúde Pública",
       description:
-        "O sistema implementa as operações completas de CRUD (Criar, Ler, Atualizar e Deletar), oferecendo uma interface simples, responsiva e fácil de usar, que permite o controle e a organização das frotas e equipamentos de forma eficiente e prática.",
-      technologies: ["PHP", "Javascript", "Html", "CSS"],
+        "Desenvolvimento de um agente de IA para atendimento público de saúde (SUS municipal) integrado via Docker Compose, utilizando arquitetura RAG com Qdrant para consulta e citação de fontes (unidades, horários, vacinas, exames e diretrizes do Ministério da Saúde.",
+      technologies: ["Python", "React", "LangChain", "LangGraph", "FastAPI"],
 
-      link: "https://automotiva.rdatadev.site/",
+      link: "https://github.com/ricardodatadev/my-portfolio.git",
+    },
+    {
+      title: "Sistema de Gestão de Frotas ",
+      description:
+        "Desenvolvimento de um ERP para gestão de frotas e manutenção, estruturando o backend em Laravel (PHP 8.3+) e o frontend em React, integrados via Docker e Docker Compose.",
+      technologies: ["PHP", "React", "Laravel", "Docker"],
+
+      link: "https://github.com/ricardodatadev/fleet-management-erp-showcase.git",
     },
     {
       title: "Sistema de Detecção de Objetos",
@@ -23,7 +30,7 @@ export default function Projects() {
         "Projeto utilizando Python e as bibliotecas YOLO e OpenCV com o objetivo de detectar objetos em vídeos. YOLO (You Only Look Once) é um modelo de rede neural convolucional extremamente eficiente para detecção de objetos em tempo real.",
       technologies: ["Python", "YOLO", "OpenCV"],
 
-      link: "https://github.com/ricardodatadev/Detector-Objetos.git",
+      link: "https://github.com/ricardodatadev/detector-objetos.git",
     },
     {
       title: "Dashboard Financeiro",
